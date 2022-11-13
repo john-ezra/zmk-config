@@ -32,7 +32,7 @@
 			&bt BT_CLR &kp Z &kp R &kp L &kp D &kp W                                           &kp Y &kp P    &kp U     &kp X   &kp Q    &kp BSLH
 			&kp TAB    &kp H &kp N &kp T &kp S &kp C                                           &kp B &kp I    &kp E     &kp O   &kp A    &kp SQT
 			&kp LSHFT  &kp K &kp V &kp M &kp F &kp G &kp ESC   &kp LALT      &kp RET &kp ESC   &kp J &kp SEMI &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	                 	   &kp LCTL &kp LGUI &mo 1 &kp SPACE &kp CMBS      &kp TAB &kp LSHFT &mo 2 &kp DEL  &kp CAPS
+	                 	   &kp LCTL &kp LGUI &mo 1 &kp SPACE CMBS      &kp TAB &kp LSHFT &mo 2 &kp DEL  &kp CAPS
 			>;
 		};
 		windows_layer {
