@@ -49,7 +49,7 @@
 			bindings = <
 			FIND &kp Z &kp R &kp L &kp D &kp W                                           &kp Y &kp P    &kp U     &kp X   &kp Q    &kp BSLH
 			COPY &kp H &kp N &kp T &kp S &kp C                                           &kp B &kp I    &kp E     &kp O   &kp A    &kp SQT
-			UNDO LSHFT  &kp K &kp V &kp M &kp F &kp G ALT_ESC   &kp LCTL      &kp RET ALT_ESC   &kp J &kp SEMI &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+			UNDO &kp K &kp V &kp M &kp F &kp G ALT_ESC   &kp LCTL      &kp RET ALT_ESC   &kp J &kp SEMI &kp COMMA &kp DOT &kp FSLH &kp RCTRL
 	                 	   &kp LCTL SFT_ENT  &mo 1 &kp SPACE CMD_BSP       &kp TAB SFT_ENT   &mo 2 &kp DEL  &kp CAPS
 			>;
 		};
