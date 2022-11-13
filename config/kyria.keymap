@@ -12,7 +12,6 @@
 #define WIN 1
 #define LWR 2
 #define RSE 3
-#define ADJ 4
 
 / {
 	keymap {
