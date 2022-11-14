@@ -16,6 +16,7 @@
 
 //Mod Tap Aliases
 #define CMD_BSP &mt LGUI BSPC
+#define CTL_BSP &mt LCTL BSPC
 #define SFT_ENT &mt LSHFT RET
 #define ALT_ESC &mt LALT ESC
 
@@ -23,6 +24,9 @@
 #define COPY &ht LG(C) LG(V)
 #define FIND &ht LG(A) LG(F)
 #define UNDO &ht LG(Y) LG(Z)
+#define W_COPY &ht LC(C) LC(V)
+#define W_FIND &ht LC(A) LC(F)
+#define W_UNDO &ht LC(Y) LC(Z)
 
 / {
 	behaviors {
@@ -51,10 +55,10 @@
 		windows_layer {
 			label = "WINDOWS";
 			bindings = <
-			&bt BT_CLR &kp Z &kp R &kp L    &kp D    &kp W                                         &kp Y &kp P    &kp U     &kp X   &kp Q    &kp BSLH
-			&kp TAB    &kp H &kp N &kp T    &kp S    &kp C                                         &kp B &kp I    &kp E     &kp O   &kp A    &kp SQT
-			&kp LSHFT  &kp K &kp V &kp M    &kp F    &kp G &kp ESC   &kp LALT    &kp RET &kp ESC   &kp J &kp SEMI &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-										         &kp LCTL &kp LGUI &mo 1 &kp SPACE &kp BSPC    &kp TAB &kp LSHFT &mo 2 &kp DEL  &kp CAPS
+			W_COPY &kp Z &kp R &kp L    &kp D    &kp W                                       &kp Y &kp P    &kp U     &kp X   &kp Q    &kp BSLH
+			W_FIND &kp H &kp N &kp T    &kp S    &kp C                                       &kp B &kp I    &kp E     &kp O   &kp A    &kp SQT
+			W_UNDO &kp K &kp V &kp M    &kp F    &kp G ALT_ESC   &kp LGUI    &kp RET ALT_ESC &kp J &kp SEMI &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+										     &kp LGUI SFT_ENT  &mo 2 &kp SPACE CTL_BSP     &kp TAB SFT_ENT &mo 3 &kp DEL  &kp CAPS
 			>;
 		};
     lower_layer {
@@ -71,12 +75,9 @@
       bindings = <
 			&trans     &kp F1     &kp F2     &kp F3       &kp F4 &kp F5                                              &kp F6 &kp F7   &kp F8 &kp F9   &kp F10   &kp F11
 			&trans     &kp N1     &kp N2     &kp N3       &kp N4 &kp N5                                              &kp N6 &kp N7   &kp N8 &kp N9   &kp N0    &kp F12
-			&bt BT_CLR &bt BT_PRV &bt BT_NXT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &trans      &trans &trans &trans &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp ESC
+			&bt BT_CLR &bt BT_PRV &bt BT_NXT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &trans      &trans &trans &to 1  &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp ESC
 			                                 &trans       &trans       &trans       &trans &trans      &trans &trans &trans &trans  &trans
       >;
     };
 	};
 };
-
-//cp -X kyria_left-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/
-//cp -X kyria_right-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/
