@@ -63,7 +63,7 @@
 							label = "PDW";
 							#binding-cells = <0>;
 							bindings = <&kp H>, <&kp LC(LEFT)>;
-							mods = <(MOD_LCTL|MOD_RCTL)>;
+							mods = <(MOD_LGUI|MOD_RGUI)>;
 							keep-mods = <(MOD_LCTL)>;
 			};
 			ndw: next_desktop_windows {
