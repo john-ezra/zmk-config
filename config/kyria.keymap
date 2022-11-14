@@ -28,6 +28,7 @@
 #define W_COPY &ht LC(C) LC(V)
 #define W_FIND &ht LC(A) LC(F)
 #define W_UNDO &ht LC(Y) LC(Z)
+#define MSN_CTL &ht LCTL LCTL(UP)
 
 / {
 	behaviors {
@@ -82,3 +83,6 @@
     };
 	};
 };
+
+//cp -X kyria_left-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/
+//cp -X kyria_right-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/
