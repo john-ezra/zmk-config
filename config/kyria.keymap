@@ -64,7 +64,7 @@
 							#binding-cells = <0>;
 							bindings = <&kp H>, <&kp LC(LEFT)>;
 							mods = <(MOD_LGUI|MOD_RGUI)>;
-							keep-mods = <(MOD_LCTL)>;
+							keep-mods = <(MOD_LGUI)>;
 			};
 			ndw: next_desktop_windows {
 							compatible = "zmk,behavior-mod-morph";
