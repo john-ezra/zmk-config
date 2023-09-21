@@ -17,7 +17,7 @@
 
 //Mod Tap Aliases
 #define CMD_BSP &mt LGUI BSPC
-#define CTL_BSP &mt LCTL BSPC
+//#define CTL_BSP &mt LCTL BSPC
 #define SFT_ENT &mt LSHFT RET
 #define ALT_ESC &mt LALT ESC
 
@@ -30,6 +30,7 @@
 #define W_UNDO &ht LC(Y) LC(Z)
 #define MSN_CTL &ht LCTL LC(UP)
 #define WIN_TSK &ht LGUI LG(TAB)
+#define CTL_BSP &ht LCTL BSPC
 
 / {
 	behaviors {
@@ -116,6 +117,3 @@
     };
 	};
 };
-
-//cp -X kyria_left-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/
-//cp -X kyria_right-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/
