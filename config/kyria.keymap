@@ -14,6 +14,7 @@
 #define WINDOWS 1
 #define LOWER 2
 #define RAISE 3
+#define GAME 4
 
 //Mod Tap Aliases
 #define CMD_BSP &mt LGUI BSPC
@@ -89,7 +90,7 @@
 			>;
 			
 		};
-		windows_layer {
+		OSX_layer {
 			label = "OSX";
 			bindings = <
 			FIND &kp Z &kp R &kp L    &kp D    &kp W                                           &kp Y &kp P    &kp U     &kp X   &kp Q    &kp BSLH
@@ -103,7 +104,7 @@
 			bindings = <
 			&kp TAB &kp STAR     &kp FSLH     &kp PLUS   &kp MINUS  &kp EQUAL                                 &kp PIPE  &kp LBRC  &kp RBRC &kp AT    &kp EXCL  &kp GRAVE
 			&kp RET &kp LEFT     &kp UP       &kp DOWN   &kp RIGHT  &trans                                    &kp BSLH  &kp LPAR  &kp RPAR &kp DLLR  &kp HASH  &kp TILDE
-			&kp ESC &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_PLAY &kp C_NEXT &trans &trans    &trans &trans &kp UNDER &kp LBKT  &kp RBKT &kp CARET &kp PRCNT &kp AMPS
+			&kp ESC &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_PLAY &kp C_NEXT &trans &trans    &to 4  &trans &kp UNDER &kp LBKT  &kp RBKT &kp CARET &kp PRCNT &kp AMPS
 	                                      &trans     &trans     &trans     &trans &trans    &trans &trans &trans    &trans  &trans
 			>;
     };
@@ -115,6 +116,15 @@
 			&bt BT_CLR &bt BT_PRV &bt BT_NXT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &trans      &to 0  &to 1  &tog 1 &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp ESC
 			                                 &trans       &trans       &trans       &trans &trans      &trans &trans &trans &trans   &ext_power EP_OFF
       >;
+    };
+		game_layer {
+			label = "GAME";
+      bindings = <
+			&kp N0 &kp Z &kp R &kp L    &kp D    &kp W                                       &kp Y &kp P    &kp U     &kp X   &kp Q    &kp BSLH
+			&kp N1 &pdw  &kp N &kp T    &ndw     &kp C                                       &kp B &kp I    &kp E     &kp O   &kp A    &kp GRAVE
+			&kp N2 &kp K &kp V &kp M    &kp F    &kp G  &kp N8   &kp N9      &to 0 ALT_ESC &kp J &kp SEMI &kp COMMA &kp DOT &kp FSLH &kp SQT
+										     &kp N3   &kp N4   &kp N5 &kp N6   &kp N7      &kp TAB SFT_ENT &mo 3 &kp DEL  &kp CAPS
+			>;
     };
 	};
 };
